@@ -1,212 +1,175 @@
-﻿.header {
-    position: absolute;
-    width: 1600px;
-    height: 853px;
-    background: #000000B2;
-}
-
-.background {
-    width: 1600px;
-    height: 853px;
-    opacity: 0.8;
-}
-
-.decoration {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.logo-top {
-    position: absolute;
-    width: 156px;
-    left: 200px;
-    top: 57px;
-}
-
-.logo-bottom {
-    position: absolute;
-    width: 138px;
-    left: 199px;
-    top: 92px;
-}
-
-.navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navigation_top {
-    position: absolute;
-    width: 547px;
-    height: 19px;
-    left: 689px;
-    top: 72px;
-}
-
-.navigation_bottom {
-    position: absolute;
-    width: 443px;
-    height: 26px;
-    left: 201px;
-    top: 142px;
-}
-
-.list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+﻿* {
     margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-.list_top {
-    width: 547px;
-    height: 19px;
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
 }
 
-.list_bottom {
-    width: 443px;
-    height: 26px;
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
 }
 
-.list__item {
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    height: 853px;
+    background: url(assets/images/background.png) no-repeat;
+    background-size: cover;
+}
+
+.foodie-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.foodie-top-row__right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+}
+
+.navigation-top {
+    width:80%;
+}
+
+.list-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.list-top__item {
     list-style-type: none;
 }
 
-.list__link {
+.list-top__link {
     text-decoration: none;
     font-family: Roboto;
+    font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
 }
 
-.list__link_top {
-    font-weight: bold;
-    line-height: 19px;
-}
-
-.list__link_bottom {
-    line-height: 26px;
-}
-
 .login {
-    position: absolute;
-    width: 138px;
-    height: 52px;
-    left: 1262px;
-    top: 55px;
+    padding: 10px 30px;
     background: #FFFFFF;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
-    border-radius: 100px;
+    border-radius: 20px;
     font-family: Roboto;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 22px;
     color: #FE724C;
     cursor: pointer;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content__left-side {
+    width: 50%;
+}
+
 .head-one {
-    position: absolute;
-    width: 562px;
-    height: 108px;
-    left: 241px;
-    top: 310px;
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 46px;
-    line-height: 54px;
     color: #FFFFFF;
-    margin: 0;
 }
 
 .header__abstract {
-    position: absolute;
-    width: 585px;
-    height: 119px;
-    left: 241px;
-    top: 445px;
     font-family: Roboto;
     font-size: 17px;
-    line-height: 23px;
+    text-align: justify;
+    color: #FFFFFF;
+    margin: 30px 0 50px;
+}
+
+.top-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.app-store-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FE724C;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.google-play-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid #FFFFFF;
+    margin-left: 20px;
+}
+
+.logo-image {
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 17px;
     color: #FFFFFF;
 }
 
-.app-store-rectangle {
-    position: absolute;
-    width: 174px;
-    height: 55px;
-    left: 241px;
-    top: 555px;
-    
-}
 
-.app-store-logo {
-    position: absolute;
-    width: 18.43px;
-    height: 21.94px;
-    left: 274.3px;
-    top: 570.53px;
-    
-}
 
-.app-store-text {
-    position: absolute;
-    width: 75px;
-    height: 20px;
-    left: 300px;
-    top: 572px;
-}
 
-.google-play-rectangle {
-    position: absolute;
-    width: 174px;
-    height: 55px;
-    left: 431px;
-    top: 555px;
-}
 
-.google-play-logo {
-    position: absolute;
-    width: 16.42px;
-    height: 20.23px;
-    left: 460px;
-    top: 572.39px;
-}
 
-.google-play-text {
-    position: absolute;
-    width: 91px;
-    height: 20px;
-    left: 484px;
-    top: 572px;
-}
 
-.mobile-one {
-    position: absolute;
-    left: 980px;
-    top: 171px;
-    filter: drop-shadow(17px 4px 50px rgba(0, 0, 0, 0.3));
-}
 
-.mobile-one__screen {
-    position: absolute;
-    width: 268.6px;
-    height: 581.62px;
-    left: 20.06px;
-    top: 18.62px;
-    z-index: 1;
-}
 
-.mobile-one__frame {
-    position: absolute;
-    width: 308px;
-    height: 616px;
-    z-index: 2;
-}
+
+
+
+/* .mobile-one {
+    margin: 20px;
+} */
+
+
 
 .image-group {
     display: flex;
