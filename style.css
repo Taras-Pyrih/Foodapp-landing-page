@@ -28,6 +28,13 @@
 
 @font-face {
     font-family: Montserrat;
+    src: url(assets/fonts/Montserrat-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Montserrat;
     src: url(assets/fonts/Montserrat-Bold.ttf);
     font-style: normal;
     font-weight: 700;
@@ -132,8 +139,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: #FE724C;
-    border-radius: 20px;
+    border-radius: 21.5px;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .google-play-button {
@@ -141,10 +149,11 @@
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 21.5px;
     padding: 10px 20px;
     border: 1px solid #FFFFFF;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .logo-image {
@@ -222,24 +231,86 @@
     color: #666666;
 }
 
+.app-work {
+    height: 1013px;
+    background: #FE724C;
+}
 
+.app-work-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+}
 
+.app-work-content__left-side {
+    width: 45%;
+}
 
+.app-work-content__right-side {
+    width: 55%;
+}
 
-
-
-
-
-
-
-.app-work__head-two {
-    position: absolute;
-    width: 544px;
-    height: 22px;
-    left: 199px;
-    top: 113px;
+.app-work-content__left-side .head-two {
     color: #FFFFFF;
 }
+
+.rectangle-two {
+    line-height: 2px;
+    padding: 5px 0 90px 0;
+}
+
+.sequence-list__item {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 80px;
+}
+
+.sequence-list__icon {
+    
+    padding: 35px;
+    border-radius: 56px;
+    background-color: #FFFFFF;
+}
+
+.sequence-list__text {
+    padding-left: 40px;
+}
+
+.head-three {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+    color: #FFFFFF;
+}
+
+.app-work-text {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+.app-work-content__right-side {
+    background: url(assets/images/mobile-two-background.png) center no-repeat;
+    background-size: cover;
+}
+
+.mobile-two {
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
 
 .screenshots__head-two {
     position: absolute;
@@ -263,18 +334,6 @@
 
 }
 
-.about__rectangle {
-    left: 800px;
-    top: 1010px;
-    background: #EFCA08;
-}
-
-.app-work__rectangle {
-    left: 201px;
-    top: 159px;
-    background: #FFFFFF;
-}
-
 .screenshots__rectangle {
     left: 769px;
     top: 2876px;
@@ -283,147 +342,9 @@
 
 
 
-.app-work {
-    position: absolute;
-    width: 1600px;
-    height: 1013px;
-    top: 1740px;
-    background: #FE724C;
-}
 
-.icon {
-    position: absolute;
-    left: 199px;
-    
-}
 
-.icon_one {
-    top: 261px;
-}
 
-.icon_two {
-    top: 490px;
-}
-
-.icon_three {
-    top: 720px;
-}
-
-.icon-circle {
-    width: 109px;
-    height: 109px;
-    border-radius:54.5px;
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
-}
-
-.icon-image-one {
-    position: absolute;
-    left: 40.05px;
-    top: 40.23px;
-}
-
-.icon-image-two-1 {
-    position: absolute;
-    left: 47.67px;
-    top: 40.75px;
-}
-
-.icon-image-two-2 {
-    position: absolute;
-    left: 38.17px;
-    top: 62.92px;
-}
-
-.icon-image-three-1 {
-    position: absolute;
-    left: 37.38px;
-    top: 36px;
-}
-
-.icon-image-three-2 {
-    position: absolute;
-    left: 48.06px;
-    top: 47.87px;
-}
-
-.head-three {
-    position: absolute;
-    height: 22px;
-    left: 343px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 22px;
-    color: #FFFFFF;
-    margin: 0;
-
-}
-
-.head-three_position-one {
-    width: 145px;
-    top: 261px;
-}
-
-.head-three_position-two {
-    width: 208px;
-    top: 481px;
-}
-
-.head-three_position-three {
-    width: 147px;
-    top: 719px;
-}
-
-.app-work__content {
-    position: absolute;
-    width: 384px;
-    height: 121px;
-    left: 343px;
-    
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 28px;
-    color: #FFFFFF;
-}
-
-.app-work__content_one {
-    top: 295px;
-}
-
-.app-work__content_two {
-    top: 515px;
-}
-
-.app-work__content_three {
-    top: 753px;
-}
-
-.mobile-two-background {
-    position: absolute;
-    width: 836px;
-    height: 788px;
-    left: 672px;
-    top: 135px;
-}
-
-.mobile-two {
-    position: absolute;
-    left: 883px;
-    top: 78px;
-}
-
-.mobile-two__frame {
-    width: 432.77px;
-    height: 858.85px;
-}
-
-.mobile-two__screen {
-    position: absolute;
-    width: 371.14px;
-    height: 802.71px;
-    left: 30.82px;
-    top: 26.8px;
-}
 
 .mobile-slider {
     position: absolute;
