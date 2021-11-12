@@ -61,7 +61,6 @@
 			</div>
 		</div>
 	</header>
-	
 	<main class="main">
 		<section class="about">
 			<div class="wrapper">
@@ -78,9 +77,6 @@
 					</div>
 					<div class="about-content__right-side">
 						<h2 class="head-two">About Us</h2>
-						<div class="rectangle-one">
-							<img src="assets/images/rectangle-one.png">
-						</div>
 						<p class="about-abstract">
 							Myresfeber is a leading city & entertainment guide filled with handpicked recommendations of what to do in your city, explore
 							hidden gems and be the first to get the latest buzz!
@@ -106,9 +102,6 @@
 				<div class="app-work-content">
 					<div class="app-work-content__left-side">
 						<h2 class="head-two">How does this App Work?</h2>
-						<div class="rectangle-two">
-							<img src="assets/images/rectangle-two.png">
-						</div>
 						<ul class="sequence-list">
 							<li class="sequence-list__item">
 								<div class="sequence-list__icon">
@@ -154,35 +147,45 @@
 				</div>
 			</div>
 		</section>
-
-
-
-
-
-
-
-
-
-
-
+		
+		
 		<section class="screenshots">
-			<h2 class="head-two screenshots__head-two head-two_line-height_s">Screenshots</h2>
-			<div class="rectangle screenshots__rectangle"></div>
-			<div class="mobile-slider">
-				<div class="mobile-screenshot">
-					<img class="mobile-screenshot__screen" src="Images/mobile-three-screen.svg" />
-					<img class="mobile-screenshot__frame" src="Images/mobile-three-frame.svg" />
-				</div>
-				<div class="mobile-screenshot">
-					<img class="mobile-screenshot__screen" src="Images/mobile-four-screen.svg" />
-					<img class="mobile-screenshot__frame" src="Images/mobile-four-frame.svg" />
-				</div>
-				<div class="mobile-screenshot">
-					<img class="mobile-screenshot__screen" src="Images/mobile-five-screen.svg" />
-					<img class="mobile-screenshot__frame" src="Images/mobile-five-frame.svg" />
+			<div class="wrapper">
+				<div class="screenshots-content">
+					<h2 class="head-two">Screenshots</h2>
+					<div class="mobiles-slider-block">
+						<img class="arrow arrow__left" src="assets/images/left-arrow.svg">
+						<div class="mobiles-slider">
+							<div class="mobile-screenshot">
+								<img src="assets/images/mobile-three.png">
+							</div>
+							<div class="mobile-screenshot">
+								<img src="assets/images/mobile-four.png">
+							</div>
+							<div class="mobile-screenshot">
+								<img src="assets/images/mobile-five.png">
+							</div>
+							<div class="mobile-screenshot">
+								<img src="assets/images/mobile-three.png">
+							</div>
+							<div class="mobile-screenshot">
+								<img src="assets/images/mobile-four.png">
+							</div>
+							<div class="mobile-screenshot">
+								<img src="assets/images/mobile-five.png">
+							</div>
+						</div>
+						<img class="arrow arrow__right" src="assets/images/right-arrow.svg">
+					</div>
 				</div>
 			</div>
 		</section>
+
+
+
+
+
+
 
 		<section class="clients-speak">
 			<div class="description">
@@ -264,23 +267,26 @@
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
     <script src="assets/slick/slick.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            let leftArrow = '<img class="arrow arrow__left" src="Images/left-arrow.svg"/>';
-            let rightArrow = '<img class="arrow arrow__right" src="Images/right-arrow.svg" />';
+		<img src="assets/images/left-arrow.svg">
+		
+		<script>
+		$(document).ready(function () {
+			let leftArrow = document.querySelector(".arrow__left");
+			let rightArrow = document.querySelector(".arrow__right");
 
-            $('.mobile-slider').slick({
-                prevArrow: leftArrow,
-                nextArrow: rightArrow,
-                autoplay: true,
-                autoplaySpeed: 5000
-            });
-
-            $('.testimonials-slider').slick({
-                arrows: false,
-                dots: true
-            });
-        });
-    </script>
+			$('.mobiles-slider').slick({
+				slidesToShow: 3,
+				prevArrow: leftArrow,
+				nextArrow: rightArrow,
+				autoplay: true,
+				autoplaySpeed: 5000
+			});
+			
+			$('.testimonials-slider').slick({
+				arrows: false,
+				dots: true
+			});
+		});
+		</script>
 </body>
 </html>
