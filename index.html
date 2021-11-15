@@ -16,21 +16,21 @@
 				</div>
 				<div class="foodie-top-row__right-side">
 					<nav class="navigation-top">
-						<ul class="list-top">
-							<li class="list-top__item">
-								<a class="list-top__link" href="">Home</a>
+						<ul class="list">
+							<li class="list__item">
+								<a class="list__link" href="">Home</a>
 							</li>
-							<li class="list-top__item">
-								<a class="list-top__link" href="">About Us</a>
+							<li class="list__item">
+								<a class="list__link" href="">About Us</a>
 							</li>
-							<li class="list-top__item">
-								<a class="list-top__link" href="">How It Works</a>
+							<li class="list__item">
+								<a class="list__link" href="">How It Works</a>
 							</li>
-							<li class="list-top__item">
-								<a class="list-top__link" href="">Screenshots</a>
+							<li class="list__item">
+								<a class="list__link" href="">Screenshots</a>
 							</li>
-							<li class="list-top__item">
-								<a class="list-top__link" href="">Testimonials</a>
+							<li class="list__item">
+								<a class="list__link" href="">Testimonials</a>
 							</li>
 						</ul>
 					</nav>
@@ -273,60 +273,65 @@
 			</div>
 		</section>
 	</main>
-
-    <footer class="footer">
-        <a href=""><img class="logo-bottom" src="Images/logo.svg"></a>
-        <nav class="navigation navigation_bottom">
-            <ul class="list list_bottom">
-                <li class="list__item">
-                    <a class="list__link list__link_bottom" href="">About</a>
-                </li>
-                <li class="list__item">
-                    <a class="list__link list__link_bottom" href="">How it works</a>
-                </li>
-                <li class="list__item">
-                    <a class="list__link list__link_bottom" href="">Contact Us</a>
-                </li>
-                <li class="list__item">
-                    <a class="list__link list__link_bottom" href="">Help</a>
-                </li>
-                <li class="list__item">
-                    <a class="list__link list__link_bottom" href="">Privacy Policy</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="copyright">© 2021 Foodie. All rights reserved</div>
-        <div class="app-download">Get the App</div>
-        <a href=""><img class="app-store-badge" src="Images/app-store-badge.svg" /></a>
-        <a href=""><img class="google-play-badge" src="Images/google-play-badge.svg" /></a>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
-    <script src="assets/slick/slick.min.js"></script>
-
-		<img src="assets/images/left-arrow.svg">
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-content">
+				<div class="footer-content__left-side">
+					<a href=""><img src="assets/images/logo-bottom.png"></a>
+					<nav class="navigation-bottom">
+						<ul class="list">
+							<li class="list__item">
+								<a class="list__link" href="">About</a>
+							</li>
+							<li class="list__item">
+								<a class="list__link" href="">How it works</a>
+							</li>
+							<li class="list__item">
+								<a class="list__link" href="">Contact Us</a>
+							</li>
+							<li class="list__item">
+								<a class="list__link" href="">Help</a>
+							</li>
+							<li class="list__item">
+								<a class="list__link" href="">Privacy Policy</a>
+							</li>
+						</ul>
+					</nav>
+					<p class="copyright">© 2021 Foodie. All rights reserved</p>
+				</div>	
+				<div class="footer-content__right-side">
+					<p class="app-download">Get the App</p>
+					<div class="badges">
+						<a href=""><img src="assets/images/app-store-badge.svg"></a>
+						<a href=""><img src="assets/images/google-play-badge.svg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+	<script src="assets/slick/slick.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		let leftArrow = document.querySelector(".arrow__left");
+		let rightArrow = document.querySelector(".arrow__right");
 		
-		<script>
-		$(document).ready(function () {
-			let leftArrow = document.querySelector(".arrow__left");
-			let rightArrow = document.querySelector(".arrow__right");
-
-			$('.mobiles-slider').slick({
-				dots: true,
-				slidesToShow: 3,
-				prevArrow: leftArrow,
-				nextArrow: rightArrow,
-				autoplay: true,
-				autoplaySpeed: 5000
-			});
-			
-			$('.testimonials-slider').slick({
-				slidesToShow: 3,
-				arrows: false,
-				dots: true
-			});
+		$('.mobiles-slider').slick({
+			// dots: true,
+			slidesToShow: 3,
+			prevArrow: leftArrow,
+			nextArrow: rightArrow,
+			autoplay: true,
+			autoplaySpeed: 5000
 		});
-		</script>
+		
+		$('.testimonials-slider').slick({
+			slidesToShow: 3,
+			arrows: false,
+			dots: true
+		});
+	});
+	</script>
 </body>
 </html>
