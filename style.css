@@ -532,6 +532,12 @@
     justify-content: space-between;
 }
 
+@media screen and (min-width: 1401px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1550px) {
     .image-group img:first-child {
         margin-right: 7px;
@@ -539,6 +545,18 @@
 }
 
 @media screen and (max-width: 1400px) {
+    .foodie-top-row__right-side {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        cursor: pointer;
+    }
+
+    .hamburger-menu img {
+        height: 39px;
+    }
+
     .about-content, .app-work-content {
         flex-direction: column;
         align-items: center;
@@ -584,26 +602,6 @@
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .foodie-top-row__right-side {
-        display: none;
-    }
-    
-    .hamburger-menu {
-        cursor: pointer;
-    }
-
-    .hamburger-menu img {
-        height: 39px;
-    }
-}
-
-@media screen and (min-width: 1401px) {
-    .hamburger-menu {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .header-content__right-side {
         display: flex;
@@ -612,5 +610,85 @@
     
     .mobile-one {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .header-content__left-side {
+        width: 100%;
+    }
+
+    .header-content__right-side {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-content__left-side {
+        order: 1;
+    }
+
+    .image-group_row-one {
+        display: none;
+    }
+
+    .image-group_row-two img:first-child {
+        display: none;
+    }
+
+    .image-group_row-two img:last-child {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .mobile-two {
+        width: 100%;
+        height: auto;
+    }
+
+    .navigation-bottom .list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation-bottom .list .list__item {
+        padding-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-screenshot img {
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonial__card {
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .top-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .google-play-button {
+        margin: 0;
+    }
+
+    .sequence-list__item {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .sequence-list__text {
+        text-align: center;
+        padding: 0;
     }
 }
