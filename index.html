@@ -38,7 +38,9 @@
 					<button class="login">Login</button>
 				</div>
 				<div class="hamburger-menu">
-					<img src="assets/images/hamburger-menu-icon.png">
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
 			</div>
 			<div class="header-content">
@@ -362,6 +364,14 @@
 				}
 			]
 		});
+	});
+	
+	let hamburgerMenu = document.querySelector(".hamburger-menu");
+	let navigationTop = document.querySelector(".navigation-top");
+
+	hamburgerMenu.addEventListener("click", function () {
+		this.classList.toggle("active");
+		navigationTop.classList.toggle("active");
 	});
 	</script>
 </body>
